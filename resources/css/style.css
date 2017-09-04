@@ -12,6 +12,10 @@
 /* GLOBAL
  * ------
  */
+
+/* GLOBAL
+ * ------
+ */
 html,
 body {
   font-family: Helvetica, sans-serif;
@@ -27,7 +31,7 @@ body {
   margin: 0 auto;   /*no vertical margin, auto horizontal margin to centre content*/
 }
 
-/* MAIN BANNER
+/* MAIN BANNER (with header & welcome text box)
  * -----------
  */
 .main-banner {
@@ -38,8 +42,44 @@ body {
   background-size: cover;   /*proportionally scales background image to container*/
   background-position: center;
   /*overflow: hidden;       /*hide overflowing child content (e.g. images too big)*/
+}
+
+.header {
+  padding-top: 1rem;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: Helvetica;
+  font-size: 1rem;
+  background-color: cadetblue;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.logo img {
+  height: 1.5rem;
+}
+.logo span {
+  margin-left: 1rem;
+}
+.main-nav-bar ul {
+  display: flex;
+  align-items: center;
+}
+.main-nav-bar li {
+  padding: 1rem 2rem 1rem 0;
 
 }
+.main-nav-bar li a {
+  color: white;
+  text-decoration: none;
+}
+
 
 
 
