@@ -27,6 +27,20 @@ body {
   margin: 0 auto;   /*no vertical margin, auto horizontal margin to centre content*/
 }
 
+/* MAIN BANNER
+ * -----------
+ */
+.main-banner {
+  /*padding-top: 5.32rem;*/ /*to be shifted below fixed header*/
+  height: 30rem;
+  background-image: url('../images/glasses-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;   /*proportionally scales background image to container*/
+  background-position: center;
+  /*overflow: hidden;       /*hide overflowing child content (e.g. images too big)*/
+
+}
+
 
 
 
