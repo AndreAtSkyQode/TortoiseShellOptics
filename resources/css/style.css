@@ -2,7 +2,7 @@
     UNIT:         05 (Days 10-12)
     PROJECT:      "Tortoiseshell Optics"
     DESCRIPTION:  An unguided project to review our lessons on the Box Model, CSS Display & Position, CSS3 Flexbox (Flexible Box Layout)
-                  and Responsive Web Design (relative sizing and media queries).                  
+                  and Responsive Web Design (relative sizing and media queries).
 				  To see readme.txt for more details.
     TOP TIPS:
       1. Key Mindset to all CSS postitioning problems:
@@ -16,8 +16,10 @@ html,
 body {
   font-family: Helvetica, sans-serif;
   font-size: 18px;          /*base font size (i.e. 1em = 18px)*/
+  line-height: 1.4;
   margin: 0;
   background-color: white;
+
 }
 
 .container {
