@@ -97,6 +97,47 @@ body {
   line-height: 1.2;
 }
 
+/* SERVICES-GALLERY
+ * ----------------
+ */
+.service-gallery.container {
+  display: flex;
+  justify-content: center;
+}
+.services {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;        /*auto = to centre on horizontal axis*/
+  height: 8rem;
+}
+.services .service {
+    width: 30%;
+    height: 100%;
+    margin: 0 3rem;
+}
+.service-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 40%;
+  padding-bottom: 2rem;
+}
+.service-image img {
+  max-width: 5rem;
+  height: auto;
+  display: block;
+}
+.service-image.exams img {
+  max-width: 3.5rem;
+}
+.service-description {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 
 
 
