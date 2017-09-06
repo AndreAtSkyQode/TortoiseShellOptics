@@ -147,7 +147,7 @@ body {
 }
 .info {
   width: 35%;
-  display: flex;          /*.title & .txt = flex items*/
+  display: flex;          /*.title & span = flex items*/
   flex-direction: column; /*flex items to stack ontop of each other*/
   margin-left: 5%;
   margin-bottom: 5rem;
@@ -165,6 +165,17 @@ body {
 .info .txt {
   /*no styling yet*/
 }
+
+/* FOOTER
+ * ------
+ */
+ footer {
+   padding: 4rem 4rem;
+ }
+ footer .logo {
+   /*see inherited styling above*/
+   margin-left: 4rem;
+ }
 
  /* TROUBLESHOOTING
   * ---------------
