@@ -270,7 +270,19 @@ body {
     font-size: 0.77rem;
     padding: 1rem 0.25rem 4rem 0.25rem;
   }
-
+  /*FOOTER*/
+  footer.container {
+    display: block;
+  }
+  footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+  footer .logo span {
+    display: none;
+  }
 }
 
 
