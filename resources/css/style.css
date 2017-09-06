@@ -101,26 +101,29 @@ body {
 /* SERVICES-GALLERY
  * ----------------
  */
-.service-gallery.container {
-  display: flex;
-  justify-content: center;
+.service-gallery {
+}
+.service-gallery .container {
 }
 .services {
   display: flex;
   justify-content: center;
-  /*flex-wrap: wrap;          /*flex items wrap when container not wide enough*/
+  flex-wrap: nowrap;          /*flex items wrap when container not wide enough*/
   margin: 3rem auto;        /*auto = to centre on horizontal axis*/
-  height: 8rem;
+  min-height: 8rem;         /*cannot be smaller than height of one .service element*/
 }
 .services .service {
-    width: 30%;
-    height: 100%;
+    /*max-width: 30%;*/
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 8rem;/*100%;*/
     margin: 0 3rem;
 }
 .service-image {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  /*align-items: flex-start;*/
   height: 40%;
   padding-bottom: 2rem;
 }
@@ -222,8 +225,30 @@ body {
     font-size: 1rem;
     padding: 1rem;
   }
-  /**/
-}
+  /*SERVICES*/
+  .service-gallery {
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+  }
+  .services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .services .service {
+    margin-bottom: 1.54rem;
+  }
+  #fittings.service,
+  #delivery.service {
+    height: 5rem;/*100%;*/
+  }
+  #fittings .service-description,
+  #delivery .service-description {
+    display: block;
+  }
+}  
+
 
 /*simulate tablet screen width (portrait)
  */
@@ -257,6 +282,9 @@ body {
   .welcome-poster span {
     padding: 1.5rem 4rem;
     font-size: 1.33rem;
+  }
+  .services {
+    flex-wrap: wrap;
   }
 }
 
