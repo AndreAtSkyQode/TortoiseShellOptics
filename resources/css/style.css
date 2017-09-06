@@ -22,8 +22,7 @@ body {
   font-size: 18px;          /*base font size (i.e. 1em = 18px)*/
   line-height: 1.4;
   margin: 0;
-  background-color: white;
-
+  background-color: azure;
 }
 
 .container {
