@@ -247,7 +247,31 @@ body {
   #delivery .service-description {
     display: block;
   }
-}  
+  /*COMPANY-INFO*/
+  .company-info.container {
+    /*display: flex;
+    flex-direction: column;*/
+    display: block;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .info .title {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+    margin-bottom: 0rem;
+  }
+  .info .text {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    padding: 1rem 0.25rem 4rem 0.25rem;
+  }
+
+}
 
 
 /*simulate tablet screen width (portrait)
