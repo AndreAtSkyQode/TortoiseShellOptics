@@ -79,13 +79,15 @@ body {
 }
 
 .welcome-poster {
-  /*margin-top: 10rem;*/
+  /*position: relative;
+  top: 10rem;*/
+  margin-top: 12rem;
 }
 .welcome-poster .container {
   position: relative;
-  text-align: right;
+  text-align: right;    /*aligns container to the right*/
   left: 2rem;
-  top: 10rem;
+  /*top: 10rem;*/
 }
 .welcome-poster span {
   padding: 1.5rem 5rem;
@@ -184,47 +186,86 @@ body {
 
  /*simulate small phone screen width
   */
- @media only screen and (max-width: 470px){
-   .container {
-     max-width: 100%;   /*full screen width*/
-     margin: 0 auto;    /*no vertical margin, auto horizontal margin to centre content*/
-   }
-   .header {            /* header/navigation-bar snaps to top */
-     padding-top: 0;
-   }
-   .main-banner{
-     height: 22rem;
-   }
- }
+@media only screen and (max-width: 470px){
+  /*global changes*/
+  .container {
+    max-width: 100%;   /*full screen width*/
+    margin: 0 auto;    /*no vertical margin, auto horizontal margin to centre content*/
+  }
+  /*MAIN-BANNER (incl. header/navigation) changes*/
+  .main-banner{
+    height: 17rem;
+    background-position: 20%;
+  }
+  .header {            /* header/navigation-bar snaps to top */
+    padding-top: 0;
+  }
+  .logo span {
+    display: none;     /*hide the logo text (and don't preserve its space)*/
+  }
+  .main-nav-bar .large-nav {
+    display: none;     /*hide default navigation bar (and don't preserve its space)*/
+  }
+  .main-nav-bar .mobile-nav {
+    display: block;
+  }
+  .welcome-poster {
+    margin-top: 9rem;
+  }
+  .welcome-poster .container {
+    position: static;     /*no longer relative*/
+    display: block;       /*stretch full screen*/
+    text-align: center;
+  }
+  .welcome-poster span {
+    display: block;       /*take up entire container width*/
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  /**/
+}
+
+/*simulate tablet screen width (portrait)
+ */
+@media only screen and (min-width: 470px) and (max-width: 768px){
+}
 
  /*simulate tablet screen width (landscape)
   */
- @media only screen and (min-width: 470px) and (max-width: 1024px){
-   .container {
-     max-width: 100%;   /*full screen width*/
-     margin: 0 auto;    /*no vertical margin, auto horizontal margin to centre content*/
-   }
-   .header {            /* header/navigation-bar snaps to top */
-     padding-top: 0;
-   }
-   .main-banner{
-     height: 22rem;
-   }
-   .welcome-poster .container {
-     position: relative;  /*still relative position*/
-     left: -2rem;         /*but container now shifted 2rem LEFT*/
-     top: 7rem;           /*...and slightly higher*/
-   }
-   .welcome-poster span {
-     padding: 0.75rem 4rem;
-     font-size: 1.33rem;
-   }
- }
+/*@media only screen and (min-width: 768px) and (max-width: 1024px){*/
+@media only screen and (min-width: 470px) and (max-width: 1024px){
+  .container {
+    max-width: 100%;   /*full screen width*/
+    margin: 0 auto;    /*no vertical margin, auto horizontal margin to centre content*/
+  }
+  .header {            /* header/navigation-bar snaps to top */
+    padding-top: 0;
+  }
+  .main-banner{
+    height: 22rem;
+  }
+  .main-nav-bar .mobile-nav {
+    display: none;       /*hide small navigation bar (and don't preserve its space)*/
+  }
+  .welcome-poster {
+    margin-top: 7rem;   /*slightly higher*/
+  }
+  .welcome-poster .container {
+    position: relative;  /*still relative position*/
+    left: -2rem;         /*but container now shifted 2rem LEFT*/
+  }
+  .welcome-poster span {
+    padding: 1.5rem 4rem;
+    font-size: 1.33rem;
+  }
+}
 
  /*simulate desktop screen width
   */
  @media only screen and (min-width: 1024px){
-
+   .main-nav-bar .mobile-nav {
+     display: none;       /*hide small navigation bar (and don't preserve its space)*/
+   }
  }
 
  /* TROUBLESHOOTING
