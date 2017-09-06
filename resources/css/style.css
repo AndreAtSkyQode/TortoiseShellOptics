@@ -80,7 +80,6 @@ body {
 }
 
 .welcome-poster {
-
   margin-top: 10rem;
 }
 .welcome-poster .container {
@@ -107,6 +106,7 @@ body {
 .services {
   display: flex;
   justify-content: center;
+  /*flex-wrap: wrap;          /*flex items wrap when container not wide enough*/
   margin: 3rem auto;        /*auto = to centre on horizontal axis*/
   height: 8rem;
 }
@@ -133,13 +133,38 @@ body {
 .service-description {
   height: 40%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;       /*so that lines 1 & 2 appears on different lines*/
   justify-content: flex-start;
   align-items: center;
 }
 
-
-
+/* COMPANY-INFO
+ * ------------
+ */
+.company-info.container {
+  display: flex;
+  justify-content: center;
+}
+.info {
+  width: 35%;
+  display: flex;          /*.title & .txt = flex items*/
+  flex-direction: column; /*flex items to stack ontop of each other*/
+  margin-left: 5%;
+  margin-bottom: 5rem;
+}
+.info .title {
+  color: white;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: cadetblue;
+  width: 10rem; /*8.75rem*/
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+.info .txt {
+  /*no styling yet*/
+}
 
  /* TROUBLESHOOTING
   * ---------------
